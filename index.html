@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Site</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+        <!-- Navbar -->
+            <div class="container">
+                <div class="nav__wrapper">
+                    <div class="nav__logo">
+                        <svg width="70" height="64" viewBox="0 0 70 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M47.25 17.6H22.75C20.817 17.6 19.25 19.0327 19.25 20.8V43.2C19.25 44.9673 20.817 46.4 22.75 46.4H47.25C49.183 46.4 50.75 44.9673 50.75 43.2V20.8C50.75 19.0327 49.183 17.6 47.25 17.6Z" stroke="#6C5CE7" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M19.25 27.2H50.75" stroke="#6C5CE7" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M29.75 46.4V27.2" stroke="#6C5CE7" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <h3>Grid</h3>
+                    </div>
+                    <div class="nav__menu">
+                        <ul class="nav__list">
+                            <li class="nav__item">How it works</li>
+                            <li class="nav__item"><a href="#" class="nav__link">Who we are</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">What we do</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav__right_side">
+                        <button class="nav__btn">Sign In</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="header__content">
+            <div class="container">
+                <div class="header__design">
+                    <div class="design__rectangle"></div>
+                    <div class="design__dots">
+                        <img src="assets/dots.svg">                            
+                    </div>
+                </div>
+                <div class="header__content-wrapper">
+                    <div class="header__title">
+                        <h1>Combine <span class="special_text">fine</span> images</h1>
+                        <h2>To represent a product</h2>
+                    </div>
+                    <div class="header__grid">
+                        <!-- Первая часть грида -->
+                        <div class="header__grid-first span__col-3">
+                            <div class="header__first-text">
+                                <p>Use mixed grid with imagery, replace with your own photos and descriptions</p>
+                            </div>
+                            <div class="header__first-img">
+                                <img src="./assets/grid__first-img.png" alt="Figma makets">
+                            </div>
+                            <button class="grid-btn">Learn more</button>
+                        </div>
+
+                        <!-- Вторая часть грида -->
+                        <div class="header__grid-second">
+                            <div class="header__second-img span__col-5">
+                                <img src="./assets/grid__second-img.png" alt="Consider it done">
+                            </div>
+                            <div class="header__third-img span__col-3">
+                                <img src="./assets/grid__third-img.png" alt="Designer book">
+                            </div>
+                            <div class="header__fourth-img span__col-4">
+                                <img src="./assets/grid__fourth-img.png" alt="See my goal">
+                            </div>
+
+                            <!-- Третий грид -->
+                            <div class="header__grid-three">
+                                <div class="header__second-text span__col-4">
+                                    <p>This is multipurpose grid, it fits for portfolio, services or agency web site</p>
+                                </div>
+                                <div class="header__fifth-img span__col-2">
+                                    <img src="./assets/grid__fifth-img.png" alt="Fifth image">
+                                </div>
+                                <div class="header__sixth-img span__col-2">
+                                    <img src="./assets/grid__sixth-img.png" alt="Sixth image">
+                                </div>
+                            </div>
+
+                            <div class="header__seventh-img span__col-2">
+                                <img src="./assets/grid__seventh-img.png" alt="Design image">
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="advantages">
+            <div class="container">
+                <div class="advantages__title col">
+                    <h4 class="mb-3">Delivering good designs since 1954 🚚💨</h4>
+                </div>
+                <div class="advantages__subtitle col-12 col-md-9">
+                    <p class="mb-3">We’re the first multi-purpose design kit solutions for businesses. We help you bridge gaps between your layouts, templates and developers to empower all involved.</p>
+                </div>
+                <div class="advantages__wrapper row row-cols-2 row-cols-md-1 mt-2 mt-md-3 g-4">
+                    <div class="advantages__advantage d-flex flex-column col-6 col-md-3 mb-5">
+                        <div class="advantage__icon mb-4">
+                            <img src="./assets/support_ico.svg" alt="Support ico">                                                             
+                        </div>
+                        <p class="bold_text mb-3">Support</p>
+                        <p class="pe-xxl-5">Delivering faster and more personalized support with shared screens and cool design systems for Figma</p>
+                        <button class="advantage-btn mt-auto"><a href="">Learn more</a></button>
+                    </div>
+                    <div class="advantages__advantage d-flex flex-column col-6 col-md-3 mb-0">
+                        <div class="advantage__icon mb-4">
+                            <img src="./assets/sales_growth_ico.svg" alt="Sales Growth ico">
+                        </div>
+                        <p class="bold_text mb-3">Sales growth</p>
+                        <p class="pe-xxl-5">Identify qualified customers with easy-to-use live chat messaging and AI-based Sales Bot</p>
+                        <button class="advantage-btn mt-auto"><a href="">Learn more</a></button>
+                    </div>
+                    <div class="advantages__advantage d-flex flex-column col-6 col-md-3">
+                        <div class="advantage__icon mb-4">
+                            <img src="./assets/fast_ico.svg" alt="Fast ico">
+                        </div>
+                        <p class="bold_text mb-3">Coponents-driven</p>
+                        <p class="pe-xxl-5">Delivering faster and more personalized support with shared screens and cool design systems for Figma</p>
+                        <button class="advantage-btn mt-auto"><a href="">Learn more</a></button>
+                    </div>
+                    <div class="advantages__advantage d-flex flex-column col-6 col-md-3">
+                        <div class="advantage__icon mb-4">
+                            <img src="./assets/like_ico.svg" alt="Like ico">
+                        </div>
+                        <p class="bold_text mb-3">Swap the icon</p>
+                        <p class="pe-xxl-5">You can toggle to any icon within Instances and customize outlined stroke to more bolder or lighter</p>
+                        <button class="advantage-btn mt-auto"><a href="">Learn more</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="prices">
+            <div class="container text-center">
+                <h2 class="prices__title col-12 text-start text-md-center">Affordable pricing</h2>
+                <h4 class="prices__subtitle col-12 text-start text-md-center">Bill me <span class="orange_special-text">monthly</span> • yearly</h4>
+                <div class="prices__wrapper row row-cols-3 row-cols-md-1 g-4 g-md-5">
+                    <!-- Shape -->
+                    <div class="wiggle_shape">
+                        <img src="./assets/wiggle_shape.svg" alt="">
+                    </div>
+
+                    <div class="prices__card col-12 col-md-4 card text-start">
+                        <!-- Верхний текст -->
+                        <p class="prices__card-title mb-2 text-start">Like a pussy</p>
+                        
+                        <!-- Блок с "Free/Forever" -->
+                        <div class="prices__card-price mb-4">
+                            <h3 class="d-inline">Free</h2>
+                            <span class="h3 text-muted">/ FOREVER</span>
+                        </div>
+
+                        <!-- Список преимуществ -->
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-3">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/gray_check.svg" alt="" class="me-3">
+                                <span>Components-driven system</span>
+                            </div>
+                            </li>
+                            <li class="mb-3">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/gray_check.svg" alt="" class="me-3">
+                                <span>Sales-boosting landing pages</span>
+                            </div>
+                            </li>
+                            <li class="mb-3">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/gray_check.svg" alt="" class="me-3">
+                                <span>Awesome Feather icons pack</span>
+                            </div>
+                            </li>
+                        </ul>
+
+                        <!-- Кнопка -->
+                        <button class="card__button-outline btn btn-lg w-100 mt-auto">Try for free</button>
+                    </div>
+
+                    <div class="prices__card col-12 col-md-4 card text-start" id="individual_plan">
+                        <!-- Верхний текст -->
+                        <div class="prices__card-title">
+                            <p class="mb-2 md-auto text-start d-inline">Individual</p>
+                            <span class="badge rounded-pill text-bg-outlined">BEST!</span>
+                        </div>
+                        
+                        <!-- Блок с "Free/Forever" -->
+                        <div class="prices__card-price mb-4">
+                            <h3 class="d-inline">$24</h2>
+                            <span class="h3 text-muted">/ month</span>
+                        </div>
+
+                        <!-- Список преимуществ -->
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-3">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/yellow_check.svg" alt="" class="me-3">
+                                <span>Components-driven system</span>
+                            </div>
+                            </li>
+                            <li class="mb-3">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/yellow_check.svg" alt="" class="me-3">
+                                <span>Sales-boosting landing pages</span>
+                            </div>
+                            </li>
+                            <li class="mb-3">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/yellow_check.svg" alt="" class="me-3">
+                                <span>Awesome Feather icons pack</span>
+                            </div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex-align-items-center">
+                                    <img src="./assets/yellow_check.svg" alt="" class="me-3">
+                                    <span>Themed into 3 different styles</span>
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex-align-items-center">
+                                    <img src="./assets/yellow_check.svg" alt="" class="me-3">
+                                   <span>Will help to learn Figma</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- Кнопка -->
+                        <button class="card__button-filled btn btn-lg w-100 mt-auto">Regular license</button>
+                    </div>
+
+                    <div class="prices__card col-12 col-md-4 card text-start">
+                        <!-- Верхний текст -->
+                        <p class="prices__card-title mb-2 text-start">Corporate</p>
+                        
+                        <!-- Блок с "Free/Forever" -->
+                        <div class="prices__card-price mb-4">
+                            <h3 class="d-inline">$12</h2>
+                            <span class="h3 text-muted">/ EDITOR</span>
+                        </div>
+
+                        <!-- Список преимуществ -->
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-3">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/green_check.svg" alt="" class="me-3">
+                                <span>Components-driven system</span>
+                            </div>
+                            </li>
+                            <li class="mb-3">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/green_check.svg" alt="" class="me-3">
+                                <span>Sales-boosting landing pages</span>
+                            </div>
+                            </li>
+                            <li class="mb-3">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/green_check.svg" alt="" class="me-3">
+                                <span>Awesome Feather icons pack</span>
+                            </div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex-align-items-center">
+                                    <img src="./assets/green_check.svg" alt="" class="me-3">
+                                    <span>Themed into 3 different styles</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- Кнопка -->
+                        <button class="card__button-outline btn btn-lg w-100 mt-auto">Extended license</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper row row-cols-auto g-4 gx-30">
+                <!-- 1 Row -->
+                <div class="col-6 mb-40">
+                    <p class="minicaps mb-2">Follow us</p>
+                    <div class="footer__socials d-flex column-gap-36">
+                        <a href="">
+                            <div class="social_link rounded-circle">
+                                <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 1H9C7.67392 1 6.40215 1.52678 5.46447 2.46447C4.52678 3.40215 4 4.67392 4 6V9H1V13H4V21H8V13H11L12 9H8V6C8 5.73478 8.10536 5.48043 8.29289 5.29289C8.48043 5.10536 8.73478 5 9 5H12V1Z" stroke="#6C5CE7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="social_link rounded-circle">
+                                <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 7C16.5913 7 18.1174 7.63214 19.2426 8.75736C20.3679 9.88258 21 11.4087 21 13V20H17V13C17 12.4696 16.7893 11.9609 16.4142 11.5858C16.0391 11.2107 15.5304 11 15 11C14.4696 11 13.9609 11.2107 13.5858 11.5858C13.2107 11.9609 13 12.4696 13 13V20H9V13C9 11.4087 9.63214 9.88258 10.7574 8.75736C11.8826 7.63214 13.4087 7 15 7V7Z" stroke="#6C5CE7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5 8H1V20H5V8Z" stroke="#6C5CE7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3 5C4.10457 5 5 4.10457 5 3C5 1.89543 4.10457 1 3 1C1.89543 1 1 1.89543 1 3C1 4.10457 1.89543 5 3 5Z" stroke="#6C5CE7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                 </svg>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="social_link rounded-circle">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.0744 9.00214C19.8044 1.41214 16.5344 -0.347858 8.9944 1.92214C1.4544 4.19214 -0.355599 7.46214 1.9144 15.0021C4.1844 22.5421 7.4544 24.3521 14.9944 22.0821C22.5344 19.8121 24.3444 16.5421 22.0744 9.00214Z" stroke="#6C5CE7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.5644 5.99219L16.1444 16.3922" stroke="#6C5CE7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.84439 7.61206L11.4244 18.0121" stroke="#6C5CE7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.3844 7.85205L5.98441 11.4321" stroke="#6C5CE7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.0044 12.572L7.6044 16.152" stroke="#6C5CE7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="social_link rounded-circle">
+                                <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23 1.01006C22.0424 1.68553 20.9821 2.20217 19.86 2.54006C19.2577 1.84757 18.4573 1.35675 17.567 1.13398C16.6767 0.911216 15.7395 0.967251 14.8821 1.29451C14.0247 1.62177 13.2884 2.20446 12.773 2.96377C12.2575 3.72309 11.9877 4.62239 12 5.54006V6.54006C10.2426 6.58562 8.50127 6.19587 6.93101 5.4055C5.36074 4.61513 4.01032 3.44869 3 2.01006C3 2.01006 -1 11.0101 8 15.0101C5.94053 16.408 3.48716 17.109 1 17.0101C10 22.0101 21 17.0101 21 5.51006C20.9991 5.23151 20.9723 4.95365 20.92 4.68006C21.9406 3.67355 22.6608 2.40277 23 1.01006V1.01006Z" stroke="#6C5CE7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 mb-40">
+                    <p class="minicaps mb-0">Follow us</p>
+                    <h4 class="purple_text">hello@fapsterapp.com</h4>
+                </div>
+                <!-- 2 Row -->
+                <div class="col-6 row row-cols-4 gy-3 gx-30">
+                    <div class="col-12">
+                        <p class="minicaps">Information</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="footer__paragraph"><a href="">About Fapster app</a></p>
+                    </div>
+                    <div class="col-4">
+                        <p class="footer__paragraph"><a href="">Onhovered / Active</a></p>
+                    </div>
+                    <div class="col-4">
+                        <p class="footer__paragraph"><a href="">We are hiring!</a></p>
+                    </div>
+                    <div class="col-4">
+                        <p class="footer__paragraph"><a href="">Get in Touch</a></p>
+                    </div>
+                    <div class="col-4">
+                        <p class="footer__paragraph"><a href="">Privacy Policy</a></p>
+                    </div>
+                    <div class="col-4">
+                        <p class="footer__paragraph"><a href="">Resources</a></p>
+                    </div>
+                    <div class="col-4">
+                        <p class="footer__paragraph"><a href="">Things We Like</a></p>
+                    </div>
+                    <div class="col-4">
+                        <p class="footer__paragraph"><a href="">Terms of Service</a></p>
+                    </div>
+                </div>
+                <form class="col-6 row row-cols-3 gy-3 gx-30">
+                    <div class="col-12">
+                        <p class="minicaps">keep in touch</p>
+                    </div>
+                    <div class="col-6">
+                        <input type="name" class="footer__input form-control" placeholder="Your name" aria-label="Name">
+                    </div>
+                    <div class="col-6">
+                        <input type="email" class="footer__input form-control" placeholder="E-mail" aria-label="Email">
+                    </div>
+                    <div class="col-8">
+                        <textarea type="text" class="footer__feedback form-control" placeholder="Leave your message" aria-label="feedback"></textarea>
+                    </div>
+                    <div class="col-4">
+                        <button type="submit" class="footer__btn">SEND</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Boostrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

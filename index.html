@@ -286,8 +286,13 @@
 
     <!-- Footer -->
     <footer class="footer">
+        <!-- Волна внизу -->
+        <div class="footer__wave">
+            <!-- <img src="./assets/footer_wave.svg" alt=""> -->
+        </div>
+
         <div class="container">
-            <div class="footer__wrapper row row-cols-auto g-4 gx-30">
+            <div class="footer__wrapper row row-cols-2 gx-30">
                 <!-- 1 Row -->
                 <div class="col-6 mb-40">
                     <p class="minicaps mb-2">Follow us</p>
@@ -333,7 +338,7 @@
                     <h4 class="purple_text">hello@fapsterapp.com</h4>
                 </div>
                 <!-- 2 Row -->
-                <div class="col-6 row row-cols-4 gy-3 gx-30">
+                <div class="footer__links col-6 row row-cols-4 gx-30">
                     <div class="col-12">
                         <p class="minicaps">Information</p>
                     </div>
@@ -362,18 +367,31 @@
                         <p class="footer__paragraph"><a href="">Terms of Service</a></p>
                     </div>
                 </div>
-                <form class="col-6 row row-cols-3 gy-3 gx-30">
+                <form class="col row row-cols-3 row-gap-3 gx-30">
                     <div class="col-12">
                         <p class="minicaps">keep in touch</p>
                     </div>
-                    <div class="col-6">
-                        <input type="name" class="footer__input form-control" placeholder="Your name" aria-label="Name">
+                    <div class="col-6 position-relative">
+                        <input type="name" class="footer__input form-control pe-5" placeholder="Your name" aria-label="Name" required>
+                        <div class="position-absolute top-50 end-0 translate-middle-y pe-3">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28 29V27C28 25.9391 27.5786 24.9217 26.8284 24.1716C26.0783 23.4214 25.0609 23 24 23H16C14.9391 23 13.9217 23.4214 13.1716 24.1716C12.4214 24.9217 12 25.9391 12 27V29" stroke="#ADADAD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M20 19C22.2091 19 24 17.2091 24 15C24 12.7909 22.2091 11 20 11C17.7909 11 16 12.7909 16 15C16 17.2091 17.7909 19 20 19Z" stroke="#ADADAD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
                     </div>
-                    <div class="col-6">
-                        <input type="email" class="footer__input form-control" placeholder="E-mail" aria-label="Email">
+                    <div class="col-6 position-relative">
+                        <input type="email" class="footer__input form-control" placeholder="E-mail" aria-label="Email" required>
+                        <div class="position-absolute top-50 translate-middle-y end-0 pe-3">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 12H28C29.1 12 30 12.9 30 14V26C30 27.1 29.1 28 28 28H12C10.9 28 10 27.1 10 26V14C10 12.9 10.9 12 12 12Z" stroke="#ADADAD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M30 14L20 21L10 14" stroke="#ADADAD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
                     </div>
-                    <div class="col-8">
-                        <textarea type="text" class="footer__feedback form-control" placeholder="Leave your message" aria-label="feedback"></textarea>
+                    <div class="col-8 footer__feedback">
+                        <textarea type="text" class="form-control" placeholder="Leave your message" aria-label="feedback"></textarea>
+                        <div class="footer__feedback-icon"></div>
                     </div>
                     <div class="col-4">
                         <button type="submit" class="footer__btn">SEND</button>
